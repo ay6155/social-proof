@@ -1,0 +1,136 @@
+:root {
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --font-family: 'League Spartan', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+html {
+    Font-size: 15px;
+}
+
+body {
+    padding: 0;
+    /* font-family: 'League Spartan', sans-serif; */
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+        url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    padding: 2em 1.5em 0 1.5em;
+    min-height: 100vh;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.product-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-service h1 {
+    color: var(--Very-Dark-Magenta);
+    padding: 1em 1.5em 0 1.5em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: var(--font-family);
+    line-height: 30px;
+}
+
+.product-service>.feedback {
+    text-align: center;
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 200;
+    margin-top: 1.5em;
+    ;
+}
+
+.rated-star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5em;
+    gap:1em;
+}
+
+.rated-star .star {
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 0.8em 2.6em;;
+    width:90%;
+    border-radius: 0.4em;;
+    text-align: center;
+}
+
+.star .review{
+    display: block;
+    margin-top:.4em;
+    color:var(--Very-Dark-Magenta);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.customer-complain{
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+    margin-top:2.5em;
+   margin-bottom: 5em;;
+}
+
+.customer-complain .buyer-feedback{
+   background-color: var(--Very-Dark-Magenta);
+   padding: 2.5em 1.8em;
+   border-radius: .4em;;
+}
+
+.buyer-text{
+    display: flex;;
+    align-items: center;
+}
+ .buyer-img .round-bd{
+    border-radius: 50%;
+    width:70%;
+}
+.buyer-info > .white-clr{
+    color:var(--White);
+    font-size: 1.2rem;
+}
+
+.buyer-info > .pur-clr{
+    color:var(--Soft-Pink);
+    font-size: 1.2rem;
+}
+
+.buyer-feedback .buyer-info{
+    margin-bottom:1.5em;
+}
+
+.buyer-feedback > .design-info{
+    color:var(--White);
+}
